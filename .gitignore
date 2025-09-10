@@ -9,6 +9,9 @@ __pycache__/
 # self-hosted action runner
 actions-runner/
 
+# SQLite
+*.sqlite
+
 # Distribution / packaging
 .Python
 build/
