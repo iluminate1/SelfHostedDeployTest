@@ -93,8 +93,11 @@ ignore = [
     "D105",
     "D106",
     "D107",
+    "D212",
+    "D203",
     "D417",
     "D419",
+    "COM812",
 ]
 
 [lint.per-file-ignores]

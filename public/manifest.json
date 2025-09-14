@@ -1,0 +1,13 @@
+{
+  "resources/main.ts": {
+    "file": "assets/main-B2Fzttin.js",
+    "name": "main",
+    "src": "resources/main.ts",
+    "isEntry": true
+  },
+  "resources/styles.css": {
+    "file": "assets/styles-BBzNnTtg.css",
+    "src": "resources/styles.css",
+    "isEntry": true
+  }
+}

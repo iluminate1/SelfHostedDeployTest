@@ -9,6 +9,16 @@ __pycache__/
 # self-hosted action runner
 actions-runner/
 
+# build assets
+public/assets
+public/hot
+
+# JavaScript/TypeScript
+node_modules/
+
+# SQLite
+*.sqlite
+
 # Distribution / packaging
 .Python
 build/
@@ -17,7 +27,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
