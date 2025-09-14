@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <title>Todo App</title>
+        {{ vite('resources/styles.css') }}
+    </head>
+    <body>
+        <div id="app"></div>
+        <noscript>
+          <div style="text-align: center; padding: 20px; background-color: #ffdddd; border: 1px solid #ffaaaa;">
+            <p>Please enable JavaScript to use the full functionality of this application.</p>
+          </div>
+        </noscript>
+        {{ vite_hmr() }}
+        {{ vite('resources/main.ts') }}
+    </body>
+</html>
