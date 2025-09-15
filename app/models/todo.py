@@ -1,4 +1,4 @@
-from sqlalchemy import NVARCHAR, Boolean, text
+from sqlalchemy import VARCHAR, Boolean, text
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.models import Base
@@ -7,7 +7,7 @@ from app.models import Base
 class Todo(Base):
     __tablename__ = "todo"
 
-    content: Mapped[str] = mapped_column(NVARCHAR(25))
+    content: Mapped[str] = mapped_column(VARCHAR(25))
     is_completed: Mapped[bool] = mapped_column(
         Boolean,
         default=False,

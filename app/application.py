@@ -18,7 +18,7 @@ app = Litestar(
         api_router,
         web_router,
     ],
-    debug=settings.debug,
+    debug=settings.DEBUG,
     plugins=[
         alchemy_plugin,
         vite_plugin,

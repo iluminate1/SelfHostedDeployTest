@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Final
 
-STATIC_PATH = "static/"
-TEMPLATES_PATH = Path() / "controllers" / "web" / "templates"
+STATIC_PATH: Final[str] = "static/"
+TEMPLATES_PATH: Final[Path] = Path() / "controllers" / "web" / "templates"
