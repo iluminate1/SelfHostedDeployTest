@@ -1,0 +1,12 @@
+# Ignore common development files
+.git/
+.github/
+.gitignore
+node_modules/
+.venv/
+public/assets/
+actions-runner/
+
+*.sqlite
+*.md
+Dockerfile
