@@ -12,9 +12,9 @@
         todos.filter((item) => item.is_completed).length,
     );
 
-    todosStore.subscribe((value) => {
+    todosStore.subscribe(({ todos: value, isLoading: loading }) => {
         todos = value;
-        isLoading = false;
+        isLoading = loading;
     });
 
     onMount(() => {

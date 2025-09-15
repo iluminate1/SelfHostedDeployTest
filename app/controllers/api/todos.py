@@ -19,8 +19,9 @@ class TodoAPI(Controller):
     async def get_todos(
         self,
         todo_repo: TodoRepository,
-    ) -> Sequence[Todo]:
-        return await todo_repo.list()
+    ) -> Sequence[TodoResponse]:
+        todos = await todo_repo.list()
+        return [TodoResponse(**todo.to_dict()) for todo in todos]
 
     @get("/count")
     async def get_todos_count(self, todo_repo: TodoRepository) -> TodoCount:
